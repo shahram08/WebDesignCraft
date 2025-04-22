@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# تنظیم کاراکترست برای UTF-8
+AddDefaultCharset UTF-8
+
+# تنظیم زمان‌بندی سرور
+php_value date.timezone "Asia/Tehran"
